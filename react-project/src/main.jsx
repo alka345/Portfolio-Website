@@ -5,14 +5,14 @@ import { BrowserRouter } from 'react-router-dom'
 import App from './App'
 import './index.css'
 
-createRoot.render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
     </BrowserRouter>
     ,
   </React.StrictMode>,
-  document.getElementById('root')
+  
 )
 
 // If you want to start measuring performance in your app, pass a function

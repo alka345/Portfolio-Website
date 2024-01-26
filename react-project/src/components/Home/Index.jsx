@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import Loader from 'react-loaders'
+// import Loader from 'react-loaders'
+// import Loader from 'react-loader-spinner'
 import AnimatedLetters from '../AnimatedLetters'
 import LogoTitle from '../../assets/images/logo-s.png'
 import Logo from './Logo'
@@ -9,7 +10,7 @@ import './index.scss'
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
-  const nameArray = ['l', 'o', 'b', 'o', 'd', 'a', 'n']
+  const nameArray = ['l', 'k', 'a', '', 'R', 'a', 'o']
   const jobArray = [
     'w',
     'e',
@@ -27,11 +28,21 @@ const Home = () => {
     '.',
   ]
 
+  // useEffect(() => {
+  //   return (() => {
+  //     setLetterClass('text-animate-hover')
+  //   }
+  //     )
+    
+  // }, [])
+
   useEffect(() => {
-    return setTimeout(() => {
+    const timeOut= setTimeout(() => {
       setLetterClass('text-animate-hover')
-    }, 4000)
+    }, 4000);
+    return ()=>clearTimeout(timeOut)
   }, [])
+
 
   return (
     <>
@@ -67,7 +78,7 @@ const Home = () => {
         <Logo />
       </div>
 
-      <Loader type="pacman" />
+      {/* <Loader type="pacman" /> */}
     </>
   )
 }

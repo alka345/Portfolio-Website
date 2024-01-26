@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import Loader from 'react-loaders'
+// import Loader from 'react-loaders'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
@@ -11,20 +11,22 @@ const Contact = () => {
   const form = useRef()
 
   useEffect(() => {
-    return setTimeout(() => {
+    const timeOut= setTimeout(() => {
       setLetterClass('text-animate-hover')
-    }, 3000)
+    }, 4000);
+    return ()=>clearTimeout(timeOut)
   }, [])
 
   const sendEmail = (e) => {
     e.preventDefault()
 
     emailjs
-      .sendForm('gmail', 'template_YeJhZkgb', form.current, 'your-token')
+      .sendForm('service_biozps7', 'template_x579p7g', form.current, 'igTFild6d9qXNQPBu')
       .then(
         () => {
           alert('Message successfully sent!')
           window.location.reload(false)
+          // e.target.reset()
         },
         () => {
           alert('Failed to send the message, please try again')
@@ -49,7 +51,9 @@ const Contact = () => {
             questions, don't hesitate to contact me using below form either.
           </p>
           <div className="contact-form">
-            <form ref={form} onSubmit={sendEmail}>
+            <form ref={form} 
+            onSubmit={sendEmail}
+            >
               <ul>
                 <li className="half">
                   <input placeholder="Name" type="text" name="name" required />
@@ -85,25 +89,26 @@ const Contact = () => {
           </div>
         </div>
         <div className="info-map">
-          Slobodan Gajić,
+          Alka Rao,
           <br />
-          Serbia,
+          India,
           <br />
-          Branka RadiČevića 19, 22000 <br />
-          Sremska Mitrovica <br />
+          Mahrajganj District , Anand Nagar
+         <br />
+         Uttar Pradesh,India
           <br />
-          <span>freelancerslobodan@gmail.com</span>
-        </div>
-        <div className="map-wrap">
-          <MapContainer center={[44.96366, 19.61045]} zoom={13}>
+          <span>alkaraojnv@gmail.com</span>
+        </div> 
+         <div className="map-wrap">
+          <MapContainer center={[27.103423, 83.283879]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[44.96366, 19.61045]}>
-              <Popup>Sloba lives here, come over for a cup of coffee :)</Popup>
+            <Marker position={[27.103423, 83.283879]}>
+              <Popup>Alka lives here, come over for a cup of coffee :</Popup>
             </Marker>
           </MapContainer>
-        </div>
+        </div> 
       </div>
-      <Loader type="pacman" />
+      {/* <Loader type="pacman" /> */}
     </>
   )
 }
