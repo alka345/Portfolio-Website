@@ -59,7 +59,7 @@ const Portfolio = () => {
                 </h1>
                  <div>{renderPortfolio(PortfolioData.portfolio)}</div> 
             </div>
-            {/* <Loader type="pacman" /> */}
+            
         </>
     );
 }

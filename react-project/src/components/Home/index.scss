@@ -23,7 +23,7 @@
         font-size: 18px;
         position: absolute;
         margin-top: -40px;
-        left: -15px;//15px
+        left: -15px;
         opacity: 0.6;
       }
   
@@ -39,14 +39,6 @@
         opacity: 0.6;
       }
   
-      // img {
-      //   margin-left: 20px;
-      //   opacity: 0;
-      //   width: 32px;
-      //   height: auto;
-      //   animation: rotateIn 1s linear both;
-      //   animation-delay: 1.4s;
-      // }
     }
   
     h2 {
@@ -70,7 +62,7 @@
       border: 1px solid #ffd700;
       margin-top: 25px;
       float: left;
-      animation: fadeInAnimation 1s 1.8s backwards;//fadeIn
+      animation: fadeInAnimation 1s 1.8s backwards;
       white-space: nowrap;
   
       &:hover {

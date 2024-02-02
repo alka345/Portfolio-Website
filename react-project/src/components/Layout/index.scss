@@ -38,7 +38,7 @@
     animation-delay: 1s;
   }
   
-  .container.contact-page,//.about-page
+  .container.contact-page,
   .container.about-page,
   .container.portfolio-page {
     
@@ -50,7 +50,7 @@
         margin-top: 0;
         position: relative;
         margin-bottom: 40px;
-        left: -10px;//10px
+        left: -10px;
   
         &:before {
           content: '<h1>';

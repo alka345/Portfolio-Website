@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters'
-import LogoTitle from '../../assets/images/logo-s.png'
-import Logo from './Logo'
+// import LogoTitle from '../../assets/images/logo-s.png'
+// import Logo from './Logo'
 import './index.scss'
 
 const Home = () => {
@@ -64,7 +64,7 @@ const Home = () => {
           </Link>
         </div>
         <div>
-  <img className='profilePhoto' src="src/assets/images/profilePhoto.jpg" alt="" />
+  <img className='profilePhoto' src="src/assets/images/profilePhoto.jpg" alt="Profile" />
 </div>
       </div>
 
