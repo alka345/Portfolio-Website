@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-// import Loader from 'react-loaders'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
@@ -93,14 +92,14 @@ const Contact = () => {
           <br />
           India,
           <br />
-          Mahrajganj District , Anand Nagar
+          Gorakhpur
          <br />
          Uttar Pradesh,India
           <br />
           <span>alkaraojnv@gmail.com</span>
         </div> 
          <div className="map-wrap">
-          <MapContainer center={[27.103423, 83.283879]} zoom={13}>
+          <MapContainer center={[26.7606, 83.3732]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker position={[27.103423, 83.283879]}>
               <Popup>Alka lives here, come over for a cup of coffee :</Popup>
@@ -108,7 +107,7 @@ const Contact = () => {
           </MapContainer>
         </div> 
       </div>
-      {/* <Loader type="pacman" /> */}
+      
     </>
   )
 }

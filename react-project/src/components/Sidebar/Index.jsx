@@ -1,13 +1,14 @@
 import './index.scss'
 import { useState } from 'react'
-import LogoS from '../../assets/images/logo-s.png'
-import LogoSubtitle from '../../assets/images/logo_sub.png'
+// import LogoS from '../../assets/images/logo-s.png'
+// import LogoS from '../../assets/images/A-2.jpg'
+import LogoS from '../../assets/images/A-1.jpeg'
+// import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faLinkedin,
   faGithub,
-  faYoutube,
-  faSkype,
+  faXTwitter
 } from '@fortawesome/free-brands-svg-icons'
 import {
   faHome,
@@ -29,7 +30,7 @@ const Sidebar = () => {
         to="/"
         onClick={() => setShowNav(false)}>
         <img src={LogoS} alt="Logo" />
-        <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
+        {/* <img className="sub-logo" src={LogoSubtitle} alt="slobodan" /> */}
       </Link>
       <nav className={showNav ? 'mobile-show' : ''}>
         <NavLink 
@@ -71,8 +72,9 @@ const Sidebar = () => {
       </nav>
       <ul>
         <li>
+          {/* LinkedIn */}
           <a
-            href="https://www.linkedin.com/in/slobodan-gaji%C4%87-006bb8b8/"
+            href="https://www.linkedin.com/in/alka-rao-frontend-developer/"
             target="_blank"
             rel="noreferrer"
           >
@@ -83,9 +85,10 @@ const Sidebar = () => {
             />
           </a>
         </li>
+        {/* Github */}
         <li>
           <a
-            href="https://github.com/bobangajicsm"
+            href="https://github.com/alka345"
             target="_blank"
             rel="noreferrer"
           >
@@ -96,28 +99,21 @@ const Sidebar = () => {
             />
           </a>
         </li>
-        <li>
+        {/* Twitter  */}
+         <li>
           <a
             href="https://www.youtube.com/channel/UCBu5ulO4d-d47lAVybpRTkw"
             rel="noreferrer"
             target="_blank"
           >
             <FontAwesomeIcon
-              icon={faYoutube}
+              icon={faXTwitter}
               color="#4d4d4e"
               className="anchor-icon"
             />
           </a>
         </li>
-        <li>
-          <a href="skype:live:bobangajicsm" rel="noreferrer" target="_blank">
-            <FontAwesomeIcon
-              icon={faSkype}
-              color="#4d4d4e"
-              className="anchor-icon"
-            />
-          </a>
-        </li>
+       
       </ul>
       <FontAwesomeIcon 
           onClick={() => setShowNav(true)}
