@@ -2,26 +2,18 @@
     "portfolio": [
         {
            
-            "title": "bookyourshows",
-            "description": "React, React-router-dom,react-slick,JSX, Tailwind CSS",
-            "cover": "src/assets/images/bookshow.png",
-            "url" : "https://bookyourshows-ar.netlify.app/"
+            "title": "apnadukaan",
+            "description": "React, React-router-dom,react-toastify,React-redux,JSX, Tailwind CSS",
+            "cover": "src/assets/images/apnadukaan.png",
+            "url" : "https://apnadukaan.vercel.app"
         },
-        
-        {
-           
-            "title": "eCommerce-features-ar",
-            "description": "React, lodash,JSX, Tailwind CSS",
-            "cover": "src/assets/images/ecommerce.png",
-            "url" : "https://ecommerce-features-ar.netlify.app/"
-        },
-        
+               
         {
            
             "title": "multi-step-form",
             "description": "React, JSX,Tailwind CSS",
             "cover": "src/assets/images/multiform.png",
-            "url" : "https://multistepform-ar.netlify.app/"
+            "url" : "https://multistepform-ar.netlify.app"
         },
         {
            
@@ -44,13 +36,7 @@
             "cover": "src/assets/images/project3.png",
             "url" : "https://randompasswordgenr-ar.netlify.app/"
         },
-        {
-            
-            "title": "list-item-api",
-            "description": "React, JSX, Tailwind CSS ",
-            "cover": "src/assets/images/showlist.png",
-            "url" : "https://list-item-api.netlify.app/"
-        },
+ 
         {
            
             "title": "React Router Project",
@@ -64,6 +50,28 @@
             "description": "React, JSX, Tailwind CSS",
             "cover": "src/assets/images/project5.png",
             "url" : "https://counter-ar.netlify.app/"
+        },
+        {
+           
+            "title": "bookyourshows",
+            "description": "React, React-router-dom,react-slick,JSX, Tailwind CSS",
+            "cover": "src/assets/images/bookshow.png",
+            "url" : "https://bookyourshows-ar.netlify.app/"
+        },
+        
+        {
+           
+            "title": "eCommerce-features-ar",
+            "description": "React, lodash,JSX, Tailwind CSS",
+            "cover": "src/assets/images/ecommerce.png",
+            "url" : "https://ecommerce-features-ar.netlify.app/"
+        },
+        {
+            
+            "title": "list-item-api",
+            "description": "React, JSX, Tailwind CSS ",
+            "cover": "src/assets/images/showlist.png",
+            "url" : "https://list-item-api.netlify.app/"
         }
     ]
 }
