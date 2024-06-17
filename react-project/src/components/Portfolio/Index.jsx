@@ -5,7 +5,7 @@ import "./index.scss";
 
 const Portfolio = () => { 
     const [letterClass, setLetterClass] = useState('text-animate');
-    // const [portfolio, setPortfolio] = useState([]);
+
 
     useEffect(() => {
         const timer = setTimeout(() => {
